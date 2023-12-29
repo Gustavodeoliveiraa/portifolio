@@ -95,6 +95,10 @@ main {
 }
 
 
+.text-start {
+    max-width: 80rem;
+    font-size: 1vw;
+}
 
 .blue-gradient {
     background: var(--blue-gradient);
@@ -145,7 +149,7 @@ main {
 }
 
 .about-text {
-    margin-left: 10% !important;
+    margin-left: 10vw !important;
 }
 
 .projects {
@@ -176,6 +180,11 @@ main {
     .container-buttons {    
         width: 75% !important;
     }
+
+    .text-start {
+        font-size: 1.6vw !important;
+    }
+    
 }
 
 @media (max-width: 991px){
@@ -187,7 +196,7 @@ main {
     .start {
         font-size: 2.5vw;
     }
-
+    
     .start h1 {
         font-size: 8.5vw;
     }
@@ -200,5 +209,8 @@ main {
         width: 300px;
     }
 
+    .text-start {
+        font-size: 2vw !important;
+    }
 
 }
