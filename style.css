@@ -11,7 +11,7 @@
 body,html, .root-height {
     background: white!important;
     background-image: linear-gradient(to bottom right,#e4e6ff,#fff 40%,#e4ebff) !important;
-    height: auto;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -36,7 +36,7 @@ body,html, .root-height {
 
 .gradient-sizes-projects {
     filter: blur(70px);
-    height: 11rem;
+    height: 20rem;
 }
 
 .blue-gradients{
@@ -160,6 +160,7 @@ main {
     height: 530px !important;
 }
 
+
 .icon-projects {
     background-color: white !important;
     height: 300px;
@@ -174,6 +175,14 @@ main {
     
 }
 
+.project-image {
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 97%;
+    height: 60%;
+    box-shadow: 2px 3px 3px 1px #554f4f70;;
+}
 
 
 @media (max-width: 1200px) {
