@@ -15,9 +15,17 @@ body,html, .root-height {
     overflow-x: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
 .h-100 {
     height: 100% !important;
     
+}
+
+.m-auto {
+    margin: 0 auto !important;
 }
 
 .secular {
@@ -36,7 +44,7 @@ body,html, .root-height {
 
 .gradient-sizes-projects {
     filter: blur(70px);
-    height: 20rem;
+    height: 13rem;
 }
 
 .blue-gradients{
@@ -62,6 +70,12 @@ body,html, .root-height {
     background: linear-gradient(93deg, #0DA7C7 6.66%, #2359AA 27.89%, #34B0F6 66.57%, #2F29A2 79.42%, #0DA7C7 96.59%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 2.8vw !important;
+    height: 108%;
+}
+
+.offcanvas-body .nav-link {
+    font-size: 2vw;
 }
 
 
@@ -156,10 +170,11 @@ main {
     margin-top: 150px;
 }
 
-.div-project {
-    height: 530px !important;
+.container-project {
+    box-shadow: 2px 3px 3px 1px #554f4f70;;
+    width: 95%;
+    
 }
-
 
 .icon-projects {
     background-color: white !important;
@@ -175,6 +190,48 @@ main {
     
 }
 
+.a-button {
+    width: 35%;
+    text-decoration: inherit;
+}
+
+.buttons {
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px;
+    background-color: transparent;
+    color: var(--light-grey-text);
+    border: 1px solid var(--light-grey-text);
+}
+
+.buttons i,
+.buttons {
+    font-size: max(1.1vw, 1vw)
+}
+
+.description-project {
+    margin-top: 120px   ;
+    color: var(--color-font-default-blue);
+}
+
+.description-project h1{
+    font-size: 2vw ;
+
+}
+
+.description-project p{
+    color: var(--light-grey-text);
+}
+
+.email svg {
+    stroke: var(--light-grey-text);
+}
+
+.email:hover svg {
+   stroke: white !important;
+}
+
+
 .project-image {
     top: 10px;
     left: 50%;
@@ -184,8 +241,29 @@ main {
     box-shadow: 2px 3px 3px 1px #554f4f70;;
 }
 
+.contact {
+    padding-top: 150px;
+}
+
+.contact p,
+.projects p {
+    color: var(--light-grey-text);
+}
+
+.div-project {
+    height: 500px !important;
+}
+
+.linkedIn:hover .fa-linkedin {
+    color: white;
+}
 
 @media (max-width: 1200px) {
+
+    .nav-logo-name {
+        font-size: 4.2vw !important;
+    }
+
     .container-buttons {    
         width: 75% !important;
     }
@@ -193,7 +271,43 @@ main {
     .text-start {
         font-size: 1.6vw !important;
     }
+
+    .col-project {
+        padding: 0 15px 0 15px !important;
+    }
+
+    .container-all-projects {
+        width: 90% !important;
+    }
+
+    .a-button {
+        width: 45%;
+        text-decoration: inherit;
+    }
+
+    .buttons i,
+    .buttons {
+    font-size: max(1.8vw, 1.4vw)
+}
+}
+
+@media (max-width: 1100px) {
+    .gradiente-2 {
+        height: 100px;
+    }
+
+    .div-project {
+        height: 440px !important;
+    }
+
+    .description-project {
+        margin-top: 85px;
+    }
+
+    .description-project h1{
+        font-size: 3vw ;
     
+    }
 }
 
 @media (max-width: 991px){
@@ -222,4 +336,67 @@ main {
         font-size: 2vw !important;
     }
 
+    .container-all-projects {
+        width: 100% !important;
+    }
+
+    .a-button {
+        width: 60%;
+        text-decoration: inherit;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    .nav-logo-name {
+        font-size: 6vw !important;
+    }
+
+    .nav-link,
+    .btn-close {
+        font-size: 3vw;
+
+    }
+    
+
+    .text-start {
+        width: 80vw !important;
+        margin: 0 auto;
+    }
+
+    .text-start p {
+        font-size: 1.3em;
+    }
+
+    .tttttttt {
+        width: 70vw !important;
+    }
+
+    main {
+        margin-top: 25vw !important;
+    }
+
+    .gradiente-about-me {
+        display: none !important;
+    }
+
+    .about-text {
+        margin: 0 !important;
+    }
+
+    .description-project h1{
+        font-size: 4.5vw ;
+    
+    }
+
+    .a-button {
+        width: 80%;
+        text-decoration: inherit;
+    }
+
+    .buttons i,
+    .buttons {
+    font-size: max(2.5vw, 2vw)
+}
 }

@@ -67,7 +67,7 @@
 
           <nav class="navbar bg-transparent d-sm-block d-lg-none ">
             <div class="container-fluid">
-              <a class="navbar-brand nav-logo-name fs-1 lead fw-bold" href="#">
+              <a class="navbar-brand nav-logo-name fs-1 lead fw-bold " href="#">
                 <span aria-hidden="true">&lt;Gustavo /&gt;</span> <span class="sr-only">Gustavo (Página atual)</span>
               </a>
 
@@ -75,9 +75,9 @@
                 <span class="navbar-toggler-icon "></span>
               </button>
 
-              <div class="offcanvas offcanvas-start w-75 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas offcanvas-start w-50 " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header ">
-                  <h1 class="nav-logo-name "><span aria-hidden="true">&lt;Gustavo /&gt;</span> <span class="sr-only">Gustavo (Página atual)</span></h1>
+                  <h1 class="nav-logo-name m-0">&lt;Gustavo /&gt;<span class="sr-only">Gustavo (Página atual)</span></h1>
                   <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
 
@@ -112,15 +112,16 @@
               <p class="roboto-grey">Me chamo Gustavo, 20 anos, desenvolvedor fullstack Django, Python,PHP e JavaScript <br> saiba mais sobre mim.</p>
             </div>
 
-            <div class=" bg-t mt-5 d-flex justify-content-center">
+            <!-- tenta arruma essa porra pro site fica 300% responsivo  -->
+            <div class=" bg-t mt-5 d-flex justify-content-center ">
               <div class="container w-50 container-buttons">
-                <div class="row">
+                <div class="row tttttttt">
                   <div class="col-12 col-md-6 d-flex justify-content-center pb-3 pb-md-0">
-                    <button type="button" class="btn btn-primary btn-lg default-social-button d-flex git" area-label="GitHub"><i class="fa-brands fa-github default-social-button-icon" aria-hidden="true"></i>GitHub</button>
+                    <a href="https://github.com/Gustavodeoliveiraa" target="_blank"><button type="button" class="btn btn-primary btn-lg default-social-button d-flex git" area-label="GitHub"><i class="fa-brands fa-github default-social-button-icon" aria-hidden="true"></i>GitHub</button></a>
                   </div>
               
                   <div class="col-12 col-md-6 d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary btn-lg default-social-button d-flex linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin default-social-button-icon " aria-hidden="true"></i>Linked In</button>
+                    <a href="https://www.linkedin.com/in/gustavo-oliveira-alves/" target="_blank"><button type="button" class="btn btn-primary btn-lg default-social-button d-flex linkedin" aria-label="LinkedIn"><i class="fa-brands fa-linkedin default-social-button-icon " aria-hidden="true"></i>Linked In</button></a>
                   </div>
                 </div>
               </div>
@@ -133,29 +134,29 @@
           <section class="about-me w-100 text-center bg-transparent mt-5 ">
             <h1>Sobre mim</h1> 
             <div class="d-flex w-100 roboto-grey  about-text  ">
-              <div class="text-start about-me w-50 ">
+              <div class="text-start about-me w-50">
                 <p>Olá! Meu nome é Gustavo, e atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UMC - Universidade Mogi das Cruzes. Sou apaixonado por tecnologia e programação desde jovem, quando meu interesse se voltava para a criação de jogos.</p>
                 <p>Em 2021, mergulhei de vez no mundo da programação e desde então venho me dedicando para me tornar um desenvolvedor fullstack. Minhas habilidades incluem o uso de linguagens como Python, JavaScript e PHP, além de experiência com bancos de dados SQL, como MySQL e Postgre.</p>
                 <p>Na faculdade, tive a oportunidade de trabalhar com C#, Java e Kotlin, ampliando meu conhecimento em diversas tecnologias. Atualmente, estou disponível para projetos freelance e em busca de oportunidades para aplicar e expandir minhas habilidades na área.</p>
               </div>
-              <div class="w-50 m-5 d-flex justify-content-end  my-auto  ">
-                <div class="gradiente-2 w-75 d-none d-lg-flex ">
+              <div class="w-50 m-5 d-flex justify-content-end  my-auto gradiente-about-me ">
+                <div class="gradiente-2 w-75 d-none d-md-flex ">
                 </div>
               </div>
             </div>
           </section>
 
 
-          <section class="projects w-100 text-center mb-4">
+          <section class="projects w-100 text-center mb-4 ">
             <h1>Projetos</h1>
+            <p>Alguns dos projetos que desenvolvi</p>
+            <div class="w-100 d-flex justify-content-end text-center mt-5">
 
-            <div class="w-100  d-flex justify-content-center">
+              <div class="row w-75 d-flex m-auto container-all-projects ">
+                <div class="col-12 col-md-6 p-0 mb-5 mb-md-0 col-project ">
 
-              <div class="row w-75 d-flex">
-                <div class="col overflow-hidden me-3">
-
-                  <div class="container-project position-relative div-project bg-white rounded overflow-hidden">
-                    <div class="container-gradientes w-100 d-flex d-flex blue-blur overflow-hidden">
+                  <div class="container-project position-relative div-project bg-white rounded overflow-hidden  m-auto  ">
+                    <div class="container-gradientes w-100 d-flex blue-blur">
                       <div class="blue-gradients gradient-sizes-projects w-100 "></div>
                       <div class="pink-gradients gradient-sizes-projects w-100"></div>
                       <div class="purple-gradients gradient-sizes-projects w-100"></div>
@@ -163,17 +164,20 @@
                     <div class="project-image bg-white position-absolute box-shadow-5 rounded">
                       
                     </div>
-                    <div>
-                      <p>salve</p>
+                    <div class="description-project">
+                      <h1>FriendSync</h1>
+                      <div class="description-p mt-3 d-flex text-start container">
+                        <p>Um projeto feito com python e Django</p>
+                      </div>
                     </div>
                   </div>
 
                 </div>
 
-                <div class="col overflow-hidden me-3">
+                <div class="col-12 col-md-6 p-0 m-0 col-project">
 
-                  <div class="container-project position-relative div-project bg-white rounded overflow-hidden">
-                    <div class="container-gradientes w-100 d-flex d-flex blue-blur overflow-hidden">
+                  <div class="container-project position-relative div-project bg-white rounded overflow-hidden m-auto ">
+                    <div class="container-gradientes w-100 d-flex blue-blur">
                       <div class="blue-gradients gradient-sizes-projects w-100 "></div>
                       <div class="pink-gradients gradient-sizes-projects w-100"></div>
                       <div class="purple-gradients gradient-sizes-projects w-100"></div>
@@ -181,8 +185,11 @@
                     <div class="project-image bg-white position-absolute box-shadow-5 rounded">
                       
                     </div>
-                    <div>
-                      <p>salve</p>
+                    <div class="description-project">
+                      <h1>FriendSync</h1>
+                      <div class="description-p mt-3 d-flex text-start container">
+                        <p>An other project</p>
+                      </div>
                     </div>
                   </div>
 
@@ -191,6 +198,26 @@
             </div>
 
           </section>
+
+          <section class="container text-center contact mb-5">
+            <h2>Contatos</h2>
+            <p>Caso tenha se interessado pode  me contatas com os links abaixo</p>
+            <div class="container mt-5 d-flex justify-content-center w-100">
+              <a href="https://wa.me/11939230072" target="_blank" class="a-button"><button type="button" class="btn btn-success w-100 buttons d-flex "><i class="fa-brands fa-whatsapp"></i>WhatsApp</button> </a>
+            </div>
+
+            <div class="container mt-4 d-flex justify-content-center w-100 ">
+              <a href="https://www.linkedin.com/in/gustavo-oliveira-alves/" target="_blank" class="a-button linkedIn"><button type="button" class="btn btn-primary w-100 buttons d-flex "><i class="fa-brands fa-linkedin"></i>Linked In</button> </a>
+            </div>
+
+
+            <div class="container mt-4 d-flex justify-content-center w-100 ">
+              <a href="mailto:ggu3131@gmail.com" target="_blank" class="a-button email "><button type="button" class="btn btn-danger w-100 buttons d-flex "><i class="fa-solid fa-envelope"></i>ggu3131@gmail.com</button>
+              </a>
+            </div>
+
+          </section>
+
         </main>
       </div>
   </body>
