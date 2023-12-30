@@ -114,6 +114,16 @@ main {
     font-size: 1vw;
 }
 
+.buttons-container {
+    width: 50% !important;
+}
+
+.git,
+.linkedin {
+    width: 300px;
+    box-sizing: border-box;
+}
+
 .blue-gradient {
     background: var(--blue-gradient);
     background-clip: text;
@@ -127,7 +137,6 @@ main {
 }
 
 .default-social-button {
-    width: 260px;
     padding: 17px 33px;
     gap: 10%;
     border-radius: 15px;
@@ -136,13 +145,17 @@ main {
 }
 
 .git {
+    width: 260px;
     background-color: black !important;
     border-bottom: 1px solid #FA0000!important;
     border-top: 1px solid #67E8F9!important;
-
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .linkedin {
+    width: 260px;
     background-color: inherit !important;
     color: var(--light-grey-text)!important;
     border: 1px solid #71717A;
@@ -272,6 +285,15 @@ main {
         font-size: 1.6vw !important;
     }
 
+    .buttons-container {
+        width: 75% !important;
+    }
+    
+    .git,
+    .linkedin {
+        width: 300px;
+    }
+
     .col-project {
         padding: 0 15px 0 15px !important;
     }
@@ -295,6 +317,7 @@ main {
     .gradiente-2 {
         height: 100px;
     }
+
 
     .div-project {
         height: 440px !important;
@@ -324,12 +347,9 @@ main {
         font-size: 8.5vw;
     }
 
-    .container-buttons {
-        width: 80vw !important;
-    }
-
-    .default-social-button {
-        width: 300px;
+    .git,
+    .linkedin {
+        width: 330px;
     }
 
     .text-start {
@@ -369,8 +389,16 @@ main {
         font-size: 1.3em;
     }
 
-    .tttttttt {
-        width: 70vw !important;
+    .default-social-button,
+    .default-social-button i{
+        font-size: max(3.5vw, 15px);        
+        align-items: center;
+        text-align: center;
+    }
+
+    .git,
+    .linkedin {
+        width: 360px;
     }
 
     main {
