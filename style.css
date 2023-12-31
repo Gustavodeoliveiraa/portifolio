@@ -6,6 +6,7 @@
     --blue-gradient: linear-gradient(93deg, #0DA7C7 6.66%, #2359AA 27.89%, #34B0F6 66.57%, #2F29A2 79.42%, #0DA7C7 96.59%);
     --gradient-grey-background: linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(121deg, #E4E6FF 10.13%, rgba(244, 244, 244, 0.40) 44.67%, #E4E6FF 100%);;
     --light-grey-text: #71717A;
+    --footer-bg: #00293F;
 }
 
 body,html, .root-height {
@@ -13,6 +14,7 @@ body,html, .root-height {
     background-image: linear-gradient(to bottom right,#e4e6ff,#fff 40%,#e4ebff) !important;
     height: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -33,9 +35,18 @@ a {
     color: var(--color-font-default-blue);
 }
 
+.secular-default {
+    font-family: var(--font-secular-one);
+
+}
+
 .roboto {
     font-family: var(--font-roboto);
     color: var(--light-grey-text);
+}
+
+.roboto-default {
+    font-family: var(--font-roboto) !important;
 }
 
 .shadow {
@@ -154,6 +165,7 @@ main {
     align-items: center;
 }
 
+
 .linkedin {
     width: 260px;
     background-color: inherit !important;
@@ -165,7 +177,7 @@ main {
     font-size: 1.8rem;
 }
 
-.fa-linkedin {
+.buttons-container .fa-linkedin {
     color: #0077B5;
 }
 
@@ -183,10 +195,18 @@ main {
     margin-top: 150px;
 }
 
+.container-all-projects {
+    margin: 0 12vw;
+}
+
 .container-project {
     box-shadow: 2px 3px 3px 1px #554f4f70;;
     width: 95%;
-    
+    transition: all 0.3s ease-in-out;
+}
+
+.container-project:hover {
+    transform: scale(1.05);
 }
 
 .icon-projects {
@@ -251,7 +271,14 @@ main {
     transform: translate(-50%);
     width: 97%;
     height: 60%;
-    box-shadow: 2px 3px 3px 1px #554f4f70;;
+    box-shadow: 2px 3px 3px 1px #554f4f70;
+
+}
+
+.fryendsync {
+    background-image: url(images/Feed-desktop.png);
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 .contact {
@@ -270,6 +297,27 @@ main {
 .linkedIn:hover .fa-linkedin {
     color: white;
 }
+
+.bg-footer {
+    background-color: var(--footer-bg);
+    color: white;
+}
+
+.button-footer-default {
+    border: none;
+    outline: none;
+    color: white;
+    width: 40vw;
+    padding: 5px;
+    border-radius: 50px;
+    margin: .5vw;
+    border-bottom: 2px solid #FA0000;
+    border-top: 2px solid #67E8F9;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 
 @media (max-width: 1200px) {
 
@@ -299,7 +347,8 @@ main {
     }
 
     .container-all-projects {
-        width: 90% !important;
+        width: 90% !important;  
+        margin: 0 5vw !important;
     }
 
     .a-button {
@@ -310,14 +359,16 @@ main {
     .buttons i,
     .buttons {
     font-size: max(1.8vw, 1.4vw)
-}
+
+    }
+
+
 }
 
 @media (max-width: 1100px) {
     .gradiente-2 {
         height: 100px;
     }
-
 
     .div-project {
         height: 440px !important;
@@ -358,12 +409,22 @@ main {
 
     .container-all-projects {
         width: 100% !important;
+        margin: 0 0 !important;
+    }
+
+    .container-project {
+        height: 410px !important;
     }
 
     .a-button {
         width: 60%;
         text-decoration: inherit;
     }
+
+    .button-footer-default {
+        width: 40vw;
+    }
+
 
 }
 
@@ -385,9 +446,7 @@ main {
         margin: 0 auto;
     }
 
-    .text-start p {
-        font-size: 1.3em;
-    }
+
 
     .default-social-button,
     .default-social-button i{
@@ -426,5 +485,18 @@ main {
     .buttons i,
     .buttons {
     font-size: max(2.5vw, 2vw)
-}
+    }
+
+    .button-footer-default {
+        width: 80vw;
+        margin: 1.5vw;
+        font-size: 3vw;
+    }
+
+    .button-footer-default  .fa-brands::before {
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
