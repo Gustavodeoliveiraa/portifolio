@@ -12,13 +12,33 @@
 body,html, .root-height {
     background: white!important;
     background-image: linear-gradient(to bottom right,#e4e6ff,#fff 40%,#e4ebff) !important;
-    height: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
+}
+
+#toTop {
+    position: fixed;
+    z-index: 7;
+    bottom: 30px;
+    right: 50px;
+    background-color: white;
+    border: 1px solid var(--light-grey-text);
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    display: none;
+}
+
+#toTop img {
+    padding: 10px;
+}
+
+#toTop:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 
 .h-100 {
